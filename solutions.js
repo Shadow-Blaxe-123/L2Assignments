@@ -72,5 +72,24 @@ var Car = /** @class */ (function (_super) {
 function processValue(value) {
     return typeof value === 'string' ? value.length : value * 2;
 }
-console.log(processValue("hello")); // Output: 5
-console.log(processValue(10)); // Output: 20
+function getMostExpensiveProduct(products) {
+    if (products.length === 0) {
+        return null;
+    }
+    else {
+        var highestPriced_1 = products[0];
+        products.forEach(function (product) {
+            if (product.price > highestPriced_1.price) {
+                highestPriced_1 = product;
+            }
+        });
+        return highestPriced_1;
+    }
+}
+// const products = [
+//   { name: "Pen", price: 10 },
+//   { name: "Notebook", price: 25 },
+//   { name: "Bag", price: 50 }
+// ];
+// console.log(getMostExpensiveProduct(products));  
+// Output: { name: "Bag", price: 50 }

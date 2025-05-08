@@ -59,3 +59,31 @@ function processValue(value: string | number): number{
 }
 // console.log(processValue("hello")); // Output: 5
 // console.log(processValue(10));      // Output: 20
+
+
+interface Product {
+    name: string;
+    price: number;
+  }
+  function getMostExpensiveProduct(products: Product[]): Product | null {
+  if (products.length ===0) {
+        return null;
+    } else {
+        let highestPriced = products[0];
+        products.forEach((product) => {
+            if (product.price > highestPriced.price) {
+                highestPriced = product;
+            }
+        })
+        return highestPriced;
+    }
+}
+
+// const products = [
+//   { name: "Pen", price: 10 },
+//   { name: "Notebook", price: 25 },
+//   { name: "Bag", price: 50 }
+// ];
+
+// console.log(getMostExpensiveProduct(products));  
+// Output: { name: "Bag", price: 50 }
