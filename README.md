@@ -22,9 +22,10 @@ type innfo2 = keyof  User; // Much better, as it automaticlly updated when new a
 Without keyof there would a jumble mess of  hardcoded Union types across the entire codebase of a large project.
 
 As you can see from above "info2" is:
+
                   - cleaner
-                  * flexible
-                  + reusable
+                  - flexible
+                  - reusable
 
 
 
