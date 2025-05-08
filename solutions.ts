@@ -1,4 +1,4 @@
-function formatString(input: string, toUpper?: boolean) : string{ // Would be simpler 
+function formatString(input: string, toUpper?: boolean) : string{ 
     if(toUpper === true || toUpper === undefined){
         return input.toUpperCase()
     } else{
@@ -9,7 +9,6 @@ function formatString(input: string, toUpper?: boolean) : string{ // Would be si
 // console.log(formatString("Hello"));          // Output: "HELLO"
 // console.log(formatString("Hello", true));   // Output: "HELLO"
 // console.log(formatString("Hello", false));  // Output: "hello"
-
 
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
     return items.filter((item) => item.rating > 4)
@@ -56,11 +55,7 @@ class Car extends Vehicle {
 
 
 function processValue(value: string | number): number{
-    if(typeof value === 'string'){
-        return value.length;
-    } else {
-        return value * 2;
-    }
+    return typeof value  === 'string' ? value.length : value * 2
 }
-// console.log(processValue("hello")); // Output: 5
-// console.log(processValue(10));      // Output: 20
+console.log(processValue("hello")); // Output: 5
+console.log(processValue(10));      // Output: 20
