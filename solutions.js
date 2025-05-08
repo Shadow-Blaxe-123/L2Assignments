@@ -44,12 +44,6 @@ function concatenateArrays() {
 }
 // console.log(concatenateArrays(["a", "b"], ["c"]));       // Output: ["a", "b", "c"]
 // console.log(concatenateArrays([1, 2], [3, 4], [5]));     // Output: [1, 2, 3, 4, 5]
-/*
-Create a Vehicle class with private make and year properties and a getInfo() method.
-Create a Car class extending Vehicle, adding a private model property and a getModel() method.
-Example:
-
-*/
 var Vehicle = /** @class */ (function () {
     function Vehicle(make, year) {
         this.make = make;
@@ -72,6 +66,27 @@ var Car = /** @class */ (function (_super) {
     };
     return Car;
 }(Vehicle));
-var myCar = new Car("Toyota", 2020, "Corolla");
-console.log(myCar.getInfo()); // Output: "Make: Toyota, Year: 2020"
-console.log(myCar.getModel()); // Output: "Model: Corolla"
+// const myCar = new Car("Toyota", 2020, "Corolla");
+// console.log(myCar.getInfo());   // Output: "Make: Toyota, Year: 2020"
+// console.log(myCar.getModel());  // Output: "Model: Corolla"
+/*
+Problem 5:
+Description: Write a function that takes a string | number and returns:
+
+The length if it's a string
+The number multiplied by 2 if it's a number
+Function Signature:
+
+Example:
+
+*/
+function processValue(value) {
+    if (typeof value === 'string') {
+        return value.length;
+    }
+    else {
+        return value * 2;
+    }
+}
+console.log(processValue("hello")); // Output: 5
+console.log(processValue(10)); // Output: 20
