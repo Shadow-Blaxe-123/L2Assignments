@@ -23,8 +23,8 @@ Without keyof there would a jumble mess of  hardcoded Union types across the ent
 
 As you can see from above "info2" is:
                   - cleaner
-                  - flexible
-                  - reusable
+                  * flexible
+                  + reusable
 
 
 
