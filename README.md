@@ -1,4 +1,4 @@
-<h1>The Usefulness of the "Keyof" Operator</h1>
+# The Usefulness of the "Keyof" Operator
 
 In big and complex projects ,like real-world applictaions, you have many moving parts that all depend on each other to function. In such a scenario, every line of code matters. All it would take is making a mistake with one small variable to cause your whole apllication to come crashing down.
 
